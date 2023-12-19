@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script.js"></script>
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/fcfe1b6a8f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="header">
+    <nav>
+        <img
+          src="https://cdn.discordapp.com/attachments/935731569774166096/1174986671025041408/Portfolio.png?ex=6569969c&is=6557219c&hm=cb9329be6ae4165f856e0502beac0133c0bdbfa0c0b494da929df8ba712bbd1b&"
+          class="logo" />
+        <div class="menu">
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Competition</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+      </nav>
+    <div class="container">
+
+       
+ 
+      <div class="header-text">
+        <p>IoT Engineer</p>
+        <h1><span>Hi I'm</span> <span id="type"></span></h1>
+        <p>Triamudom suksapatthanakarn suwannabhumi School. </p>
+        <p>My class math-science</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------about-------------- -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img
+            src="https://media.discordapp.net/attachments/935731569774166096/1185407267294687232/16.png?ex=658f7f8c&is=657d0a8c&hm=3a7a53611b794624c9a0873aa84c89a4dbd4ac548a38b29b9f426cf077dc8e08&=&format=webp&quality=lossless&width=479&height=675"
+            alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            ปัจจุบันเทคโนโลยีสารสนเทศเข้ามามีบทบาทสำคัญอย่างมากในชีวิตประจำวัน สิ่งเหล่านี้ถูกพัฒนาขึ้นมาเพื่ออำนวยความสะดวกให้กับผู้คนในสังคม<br> ตัวผมมีความชื่นชอบในด้านเทคโนโลยีสารสนเทศและไอโอทีเป็นอย่างมาก ทำให้ผมมีความฝันอยากเป็นหนึ่งในบุคลากรที่สำคัญ <br>ในการช่วยพัฒนาเมืองและสร้างสิ่งประดิษฐ์ เพื่อให้ผู้คนมีชีวิตความเป็นอยู่ที่ดีขึ้น ผมจึงมีความประสงค์อยากเข้าศึกษาต่อใน <br>คณะวิศวกรรมระบบไอโอทีและสารสนเทศ
+สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง เพื่อที่จะต่อยอดความฝันของตัวผมให้เป็นจริง 
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Competition
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <!-- <p class="tab-links active-link" id="skill" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" id="exper" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" id="edu" onclick="opentab('education')"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            >Education</p> -->
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Arduino</span><br /></li>
+              <li>
+                <span>Cisco packet tracer</span><br />
+              <li>
+                <span>Web Development</span><br />
+              </li>
+              <li>
+                <span>Python</span><br />
+              </li>
+              <li>
+                <span>Canva</span><br />
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Arduino Education Day Thailand 2023</span><br /></li>
+              <li><span>THAILAND CYBER TOP TALENT 2023 </span><br /></li>
+              <li><span>SAMSUNG SOLVE FOR TOMORROW 2023</span><br /></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>ระดับประถมศึกษา</span><br />โรงเรียนปิยะจิตวิทยา</li>
+              <li><span>ระดับมัธยมศึกษาตอนต้น</span><br />โรงเรียนเตรียมอุดมศึกษาพัฒนาการสุวรรณภูมิ (Gifted)</li>
+              <li><span>ระดับมัธยมศึกษาตอนปลาย</span><br />โรงเรียนเตรียมอุดมศึกษาพัฒนาการสุวรรณภูมิ (วิทย์-คณิต)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------services-------------------- -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Skills</h1>
+      <div class="services-list">
+        <div>
+          <img
+            src="https://media.discordapp.net/attachments/935731569774166096/1174218158803009566/9.png?ex=6566cae0&is=655455e0&hm=52a40b3849368f56648bc2b99e6161cddf5f48d42d9ce36510efb433b0945e36&=&width=1073&height=675"
+            alt="">
+          <h2>Arduino</h2>
+          <p>
+            ผมเริ่มศึกษา Arduino เพราะผมเป็นคนชอบสร้างสิ่งประดิษฐ์ต่าง ๆ ผมได้นำ Arduino
+            มาต่อยอดและสร้างสิ่งที่มีประโยชน์ให้กับผู้คน และ Arduino ยังเป็นพื้นฐานในการต่อยอดการเป็นวิศวกรรมระบบไอโอที
+          </p>
+
+        </div>
+        <div class="cisco">
+          <img
+            src="https://media.discordapp.net/attachments/935731569774166096/1175000596026249226/i_classfa-brands_fa-pythoni_1.png?ex=6569a394&is=65572e94&hm=7699603d9318adf5a1e09d28d10c6d1128650b71128dbb03c8aa504aeaab927b&=&width=675&height=675"
+            alt="">
+          <h2>Cisco</h2>
+          <p>
+            ผมได้รู้จักกับโปรแกรม Cisco PacketTracer มาจากการได้เข้าร่วม IT Camp 19
+            ผมตระหนักได้ว่าการทำแบบจำลองนั้นสำคัญมาก ๆ เพื่อให้เราได้เห็นต้นแบบเสมือนจริง
+            หลังจากจบค่ายผมได้กลับมาศึกษาเพิ่มเติมเพื่อต่อ
+            ยอดสู่เป้าหมายของผมครับ
+          </p>
+
+        </div>
+        <div>
+          <i class="fa-brands fa-python"></i>
+          <h2>Web Design</h2>
+          <p>
+            ผมเริ่มศึกษาการเขียนโปรแกรม เพราะผมมีความชื่นชอบในด้านเทคโนโลยิี ผมเริ่มจาการเขียนภาษา Python
+            ที่เป็นภาษาพื้นฐานในการฝึกเขียนโปรแกรมและง่ายต่อการเรียนรู้ครับ
+          </p>
+
+        </div>
+        <div>
+          <i class="fa-brands fa-html5"></i>
+          <h2>Web Design</h2>
+          <p>
+            ผมเริ่มศึกษาการเขียนเว็บ เพราะผมรู้สึกว่าทำไมเว็บบางเว็บถึงถูกออกแบบมาได้ไม่ค่อยดี
+            ผมจึงตัดสินใจลองเรียนรู้ในการเขียนไม่ว่าจะเป็น HTML, CSS, Javascipt
+            และได้ลองสร้างเป็นเว็บไซต์แนะนำตัวเองขึ้นมาครับ
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <div class="sub-title">My Competition</div>
+      <div class="work-list">
+        <div class="work">
+          <img
+            src="https://cdn.discordapp.com/attachments/935731569774166096/1185398320768745572/b521b03ad22de7d2.png?ex=658f7737&is=657d0237&hm=8b895b7e44df7626af816a7c55962d1fdb6b3b401c77e615a80eae95c09d2380&"
+            alt="">
+          <!-- <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, numquam qui. Repellat, corporis nemo?
+              Eum corrupti quia quidem magni rerum ratione id sapiente itaque, dolor earum ipsa, iste necessitatibus
+              dolores!</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div> -->
+        </div>
+        <div class="work">
+          <img
+            src="https://media.discordapp.net/attachments/935731569774166096/1184391154955976744/6.png?ex=658bcd38&is=65795838&hm=1b778e09ac193c6e881239851d4f6895ed55beb3ea170a2cda869082722b4bcb&=&format=webp&quality=lossless&width=477&height=675"
+            alt="">
+
+          <!-- <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, numquam qui. Repellat, corporis nemo?
+              Eum corrupti quia quidem magni rerum ratione id sapiente itaque, dolor earum ipsa, iste necessitatibus
+              dolores!</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div> -->
+        </div>
+        <div class="work">
+          <img
+            src="https://media.discordapp.net/attachments/935731569774166096/1184391155463495731/7.png?ex=658bcd38&is=65795838&hm=f724f36aee62b6b78a2b6d2935acc59081f3a1bd37e24da706ce16a417b3ee51&=&format=webp&quality=lossless&width=477&height=675"
+            alt="">
+
+          <!-- <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, numquam qui. Repellat, corporis nemo?
+              Eum corrupti quia quidem magni rerum ratione id sapiente itaque, dolor earum ipsa, iste necessitatibus
+              dolores!</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div> -->
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ConTact -->
+  <div id="contact">
+    <div class="containner">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="Sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>toybbnn123@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>0950454280</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/toybbnn.lalidwipa" target="_blank"><i
+                class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/tobynaja/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+        </div>
+        <div class="contact-right">
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p></p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-160px";
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#type', {
+      strings: ['Pornpipat Lalidwipas.', 'Student.', 'Study at TUPP.'],
+      smartBackspace: true,
+      loop: true, typeSpeed: 100, backSpeed: 100, fadeOut: true,
+    });
+
+  </script>
+
+
+</body>
+
+</html>
